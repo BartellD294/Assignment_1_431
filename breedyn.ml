@@ -2,11 +2,11 @@
 *  Author: Noah Breedy
 *)
 
-let arr = [3;5;2];;
+let arr = [3;4;1;2;5];;
 
 (* Question 10 *)
 let rec smallest x = match x with
-                | [] -> 0
+                | [] -> invalid_arg "Empty list"
                 | h::[] -> h
                 | h::t -> smallest (min h (List.hd t) :: (List.tl t));;
 smallest arr;;
