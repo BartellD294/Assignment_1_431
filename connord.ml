@@ -1,7 +1,7 @@
 (* Question 6 *)
 let makepairs x input = List.map (fun y -> (x,y)) input;;
 
-makepairs 5 [1;2;3;4];;
+(* makepairs 5 [1;2;3;4];; *)
 
 (* Question 7 *)
 let rec binomial n k =
